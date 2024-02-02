@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  li {
+    @apply m-4
+  }
+  p {
+    @apply m-4 text-balance font-extralight text-grayishpurple
+  }
+  span {
+    @apply font-semibold text-darkpurple hover:text-purple-500 cursor-pointer
+  }
+  img {
+    @apply mr-0.5 ml-auto
+  }
+}
