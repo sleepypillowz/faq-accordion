@@ -7,44 +7,50 @@
   <title>Frontend Mentor | FAQ accordion</title>
   <link href="./output.css" rel="stylesheet">
 </head>
-<body class="my-40 text-base font-worksans bg-lightpink bg-hero-pattern-mobile md:bg-hero-pattern-desktop">
+<body class="my-40 bg-lightpink bg-hero-pattern-mobile bg-no-repeat font-worksans text-base md:bg-hero-pattern-desktop">
   <div class="flex items-center justify-center">
-    <main class="mx-6 my-auto max-w-96 rounded-xl border border-black bg-White shadow-xl md:mx-auto">
-      <div class="flex items-center">
-        <img class="ml-4 w-7" src="../assets/images/icon-star.svg" alt="star">
-        <h1 class="text-3xl m-4 font-bold text-darkpurple">FAQs</h1>
-      </div>
-      <ul>
-        <li class="flex items-center">
-          <span>What is Frontend Mentor, and how will it help me?</span>
-          <img src="../assets/images/icon-minus.svg" alt="minus">
-        </li>
-        <p>Frontend Mentor offers realistic coding challenges to help developers improve their 
+    <main class="mx-6 rounded-xl border border-transparent bg-White px-8 shadow-xl" style="max-width: 37rem;">
+      <div class="items-left flex flex-col">
+        <div class="flex">
+          <img class="w-7" src="../assets/images/icon-star.svg" alt="star">
+          <h1 class="m-6 text-5xl font-bold text-darkpurple">FAQs</h1>
+        </div>
+      
+        <button class="pt-0" id="btn1"  onclick="toggleElementVisibility('p1'); toggleButtonIcon('icon1')">
+            <span class="mt-0">What is Frontend Mentor, and how will it help me?</span>
+            <img id="icon1" src="../assets/images/icon-plus.svg" alt="button">
+        </button>
+
+        <p style="display:none" id="p1">Frontend Mentor offers realistic coding challenges to help developers improve their 
         frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
         all levels and ideal for portfolio building.</p>
-
-        <li class="flex items-center">
+      
+        <button id="btn2" onclick="toggleElementVisibility('p2'); toggleButtonIcon('icon2')">
           <span>Is Frontend Mentor free?</span>
-          <img src="../assets/images/icon-plus.svg" alt="plus">
-        </li>
-        <!-- <p>Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
-        option providing access to a range of projects suitable for all skill levels.</p>   -->
-        
-        <li class="flex items-center">
-          <span>Can I use Frontend Mentor projects in my portfolio?</span>
-          <img src="../assets/images/icon-plus.svg" alt="plus">
-        </li>
-        <!-- <p>Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
-        way to showcase your skills to potential employers!</p> -->
+          <img id="icon2" src="../assets/images/icon-plus.svg" alt="button">
+        </button>
 
-        <li class="flex items-center">
-          <span>How can I get help if I'm stuck on a Frontend Mentor challenge?</span>
-          <img src="../assets/images/icon-plus.svg" alt="plus">
-        </li>
-        <!-- <p>The best place to get help is inside Frontend Mentor's Discord community. There's a help 
-        channel where you can ask questions and seek support from other community members.</p> -->
-      </ul>
+        <p style="display:none" id="p2">Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
+        option providing access to a range of projects suitable for all skill levels.</p> 
+      
+        <button id="btn3" onclick="toggleElementVisibility('p3'); toggleButtonIcon('icon3')">
+            <span>Can I use Frontend Mentor projects in my portfolio?</span>
+            <img id="icon3" src="../assets/images/icon-plus.svg" alt="button">
+        </button> 
+
+        <p style="display:none" id="p3">Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+        way to showcase your skills to potential employers!</p>
+      
+        <button class="pb-6" id="btn4" onclick="toggleElementVisibility('p4'); toggleButtonIcon('icon4')">
+            <span>How can I get help if I'm stuck on a challenge?</span>
+            <img id="icon4" src="../assets/images/icon-plus.svg" alt="button">
+        </button>
+        
+        <p style="display:none" id="p4">The best place to get help is inside Frontend Mentor's Discord community. There's a help 
+        channel where you can ask questions and seek support from other community members.</p>
+      </div>
     </main>
   </div>
+  <script src="app.js"></script>
 </body>
 </html>

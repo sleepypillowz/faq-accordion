@@ -446,20 +446,13 @@ video {
   display: none;
 }
 
-li{
-  margin: 1rem;
-}
-
 p{
-  margin: 1rem;
-  text-wrap: balance;
   font-weight: 200;
   --tw-text-opacity: 1;
   color: hsl(292 16% 49% / var(--tw-text-opacity));
 }
 
 span{
-  cursor: pointer;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: hsl(292 42% 14% / var(--tw-text-opacity));
@@ -470,9 +463,12 @@ span:hover{
   color: rgb(168 85 247 / var(--tw-text-opacity));
 }
 
-img{
-  margin-right: 0.125rem;
-  margin-left: auto;
+button{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: left;
 }
 
 *, ::before, ::after{
@@ -575,8 +571,8 @@ img{
   --tw-backdrop-sepia:  ;
 }
 
-.m-4{
-  margin: 1rem;
+.m-6{
+  margin: 1.5rem;
 }
 
 .mx-6{
@@ -589,33 +585,20 @@ img{
   margin-bottom: 10rem;
 }
 
-.my-auto{
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.ml-4{
-  margin-left: 1rem;
+.mt-0{
+  margin-top: 0px;
 }
 
 .flex{
   display: flex;
 }
 
-.h-20{
-  height: 5rem;
-}
-
-.h-24{
-  height: 6rem;
-}
-
 .w-7{
   width: 1.75rem;
 }
 
-.max-w-96{
-  max-width: 24rem;
+.flex-col{
+  flex-direction: column;
 }
 
 .items-center{
@@ -634,9 +617,8 @@ img{
   border-width: 1px;
 }
 
-.border-black{
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+.border-transparent{
+  border-color: transparent;
 }
 
 .bg-White{
@@ -653,45 +635,30 @@ img{
   background-image: url('../assets/images/background-pattern-mobile.svg');
 }
 
-.bg-cover{
-  background-size: cover;
+.bg-no-repeat{
+  background-repeat: no-repeat;
 }
 
-.bg-fixed{
-  background-attachment: fixed;
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.bg-local{
-  background-attachment: local;
+.pb-6{
+  padding-bottom: 1.5rem;
 }
 
-.bg-scroll{
-  background-attachment: scroll;
-}
-
-.bg-clip-border{
-  background-clip: border-box;
-}
-
-.bg-clip-padding{
-  background-clip: padding-box;
-}
-
-.bg-clip-content{
-  background-clip: content-box;
-}
-
-.bg-top{
-  background-position: top;
+.pt-0{
+  padding-top: 0px;
 }
 
 .font-worksans{
   font-family: Work Sans, sans-serif;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-base{
@@ -715,11 +682,6 @@ img{
 }
 
 @media (min-width: 768px){
-  .md\:mx-auto{
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .md\:bg-hero-pattern-desktop{
     background-image: url('../assets/images/background-pattern-desktop.svg');
   }
